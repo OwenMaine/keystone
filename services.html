@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Keystone Aluminum & Glass Co. Inc.</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .font-teko {
+            font-family: 'Teko', sans-serif;
+        }
+        
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/7.jpg') no-repeat center center/cover;
+            height: 50vh;
+        }
+
+        .service-card {
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+    </style>
+</head>
+<body class="leading-normal tracking-normal text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-20 top-0">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-semibold text-gray-700">
+                    <a href="index.html" class="text-gray-800 text-xl font-bold hover:text-gray-700 md:text-2xl">Keystone</a>
+                </div>
+                <div class="flex items-center -mx-2">
+                     <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100">Home</a>
+                     <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100">About</a>
+                     <a href="services.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 bg-gray-100">Services</a>
+                     <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header flex items-center justify-center text-white">
+        <div class="text-center wow fadeIn" data-wow-duration="2s">
+            <h1 class="font-teko text-6xl md:text-7xl lg:text-8xl uppercase tracking-wider">Our Services</h1>
+            <p class="text-lg md:text-xl">Precision, Quality, and Expertise in Every Detail</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services-grid" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                 <h2 class="font-teko text-5xl uppercase wow fadeInDown">What We Offer</h2>
+                 <p class="text-lg text-gray-600 wow fadeInUp" data-wow-delay="0.2s">Comprehensive solutions for all your architectural needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service: Metals -->
+                <div class="service-card p-8 rounded-lg shadow-lg text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <i class="fas fa-cubes fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="font-teko text-3xl uppercase mb-3">Metals</h3>
+                    <p class="text-gray-700">We specialize in the fabrication and installation of architectural metals, providing both structural integrity and aesthetic appeal for any building project.</p>
+                </div>
+
+                <!-- Service: Doors & Frames -->
+                <div class="service-card p-8 rounded-lg shadow-lg text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <i class="fas fa-door-open fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="font-teko text-3xl uppercase mb-3">Doors & Frames</h3>
+                    <p class="text-gray-700">Offering a wide selection of durable and stylish doors and frames, suitable for commercial, industrial, and residential applications.</p>
+                </div>
+                
+                <!-- Service: Specialty Doors & Frames -->
+                <div class="service-card p-8 rounded-lg shadow-lg text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <i class="fas fa-dungeon fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="font-teko text-3xl uppercase mb-3">Specialty Doors & Frames</h3>
+                    <p class="text-gray-700">Custom-designed doors and frames to meet specific requirements, including enhanced security, fire ratings, and unique architectural designs.</p>
+                </div>
+                
+                <!-- Service: Windows -->
+                <div class="service-card p-8 rounded-lg shadow-lg text-center wow fadeInUp" data-wow-delay="0.4s">
+                    <i class="fas fa-window-maximize fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="font-teko text-3xl uppercase mb-3">Windows</h3>
+                    <p class="text-gray-700">High-performance windows that offer superior energy efficiency, sound insulation, and aesthetic versatility for all types of buildings.</p>
+                </div>
+
+                <!-- Service: Roof Windows -->
+                <div class="service-card p-8 rounded-lg shadow-lg text-center wow fadeInUp" data-wow-delay="0.5s">
+                    <i class="fas fa-archway fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="font-teko text-3xl uppercase mb-3">Roof Windows</h3>
+                    <p class="text-gray-700">Brighten any space with our range of high-quality roof windows and skylights, expertly installed for a leak-proof and beautiful finish.</p>
+                </div>
+
+                <!-- Service: Glazing -->
+                <div class="service-card p-8 rounded-lg shadow-lg text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <i class="fas fa-clone fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="font-teko text-3xl uppercase mb-3">Glazing</h3>
+                    <p class="text-gray-700">Expert glazing services for storefronts, curtain walls, and interior applications, using top-tier glass for clarity and durability.</p>
+                </div>
+
+                <!-- Service: Louvers and Vents -->
+                <div class="service-card p-8 rounded-lg shadow-lg text-center wow fadeInUp" data-wow-delay="0.7s">
+                    <i class="fas fa-wind fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="font-teko text-3xl uppercase mb-3">Louvers and Vents</h3>
+                    <p class="text-gray-700">Functional and stylish louvers and vents that provide essential airflow and architectural character to building exteriors.</p>
+                </div>
+
+                <!-- Service: Partitions -->
+                <div class="service-card p-8 rounded-lg shadow-lg text-center wow fadeInUp" data-wow-delay="0.8s">
+                    <i class="fas fa-columns fa-3x text-blue-500 mb-4"></i>
+                    <h3 class="font-teko text-3xl uppercase mb-3">Partitions</h3>
+                    <p class="text-gray-700">Create elegant and functional interior spaces with our custom glass and aluminum partition systems, perfect for offices and commercial areas.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-blue-600 text-white text-center">
+        <div class="container mx-auto px-6 wow zoomIn">
+            <h2 class="font-teko text-5xl uppercase">Have a Project in Mind?</h2>
+            <p class="text-xl my-4">Let our experts help you find the perfect solution. Contact us for a free consultation.</p>
+            <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full uppercase hover:bg-gray-200 transition duration-300">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <h3 class="font-teko text-3xl uppercase mb-4">Contact Info</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 474 Pike Rd Unit A, Huntingdon Vy, Pa 19006-1610, US</p>
+                    <p><i class="fas fa-envelope mr-2"></i> admin@keystonealumglass.com</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                     <div class="h-64 rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.812429497176!2d-75.0505!3d40.125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b3e3e4a4b8c3%3A0x8e1f1a1b1b0b1b0b!2s474%20Pike%20Rd%20Unit%20A%2C%20Huntingdon%20Valley%2C%20PA%2019006%2C%20USA!5e0!3m2!1sen!2sng!4v1622063000000!5m2!1sen!2sng" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Initialize Wow.js -->
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+</html>

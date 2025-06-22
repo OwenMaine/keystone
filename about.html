@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Keystone Aluminum & Glass Co. Inc.</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .font-teko {
+            font-family: 'Teko', sans-serif;
+        }
+        
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/6.jpg') no-repeat center center/cover;
+            height: 50vh;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #e2e8f0;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .timeline-container.left {
+            left: 0;
+        }
+
+        .timeline-container.right {
+            left: 50%;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            background-color: white;
+            border: 4px solid #3b82f6;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .right::after {
+            left: -13px;
+        }
+
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        /* Responsive timeline */
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-container.right {
+                left: 0%;
+            }
+            .timeline-container.left::after, .timeline-container.right::after {
+                left: 18px;
+            }
+        }
+    </style>
+</head>
+<body class="leading-normal tracking-normal text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-20 top-0">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-semibold text-gray-700">
+                    <a href="index.html" class="text-gray-800 text-xl font-bold hover:text-gray-700 md:text-2xl">Keystone</a>
+                </div>
+                <div class="flex items-center -mx-2">
+                     <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100">Home</a>
+                     <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 bg-gray-100">About</a>
+                     <a href="services.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100">Services</a>
+                     <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header flex items-center justify-center text-white">
+        <div class="text-center wow fadeIn" data-wow-duration="2s">
+            <h1 class="font-teko text-6xl md:text-7xl lg:text-8xl uppercase tracking-wider">About Keystone</h1>
+            <p class="text-lg md:text-xl">Our Story, Our Promise</p>
+        </div>
+    </section>
+
+    <!-- Company History -->
+    <section id="history" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-teko text-5xl uppercase wow fadeInDown">Our History</h2>
+                <p class="text-lg text-gray-600 wow fadeInUp" data-wow-delay="0.2s">From Humble Beginnings to Industry Leaders</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-container left wow fadeInLeft">
+                    <div class="timeline-content">
+                        <h3 class="font-teko text-2xl uppercase">1985 - The Founding</h3>
+                        <p>KEYSTONE was founded with a simple vision: to provide high-quality aluminum and glass products with unparalleled craftsmanship. We started in a small workshop in Huntingdon Valley.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right wow fadeInRight">
+                    <div class="timeline-content">
+                        <h3 class="font-teko text-2xl uppercase">1998 - Expansion</h3>
+                        <p>Our commitment to quality led to rapid growth. We expanded our services to include specialty doors and frames, moving to our current, larger facility on Pike Rd.</p>
+                    </div>
+                </div>
+                <div class="timeline-container left wow fadeInLeft">
+                    <div class="timeline-content">
+                        <h3 class="font-teko text-2xl uppercase">2010 - Embracing Technology</h3>
+                        <p>We integrated advanced technology into our fabrication process, allowing for greater precision and efficiency in delivering complex glazing and metalwork projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right wow fadeInRight">
+                    <div class="timeline-content">
+                        <h3 class="font-teko text-2xl uppercase">Today - A Trusted Partner</h3>
+                        <p>Decades later, KEYSTONE stands as a leader in the industry, trusted by architects, contractors, and businesses for projects of all sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section id="vision-mission" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-teko text-5xl uppercase wow fadeInDown">Vision & Mission</h2>
+            </div>
+            <div class="flex flex-wrap items-stretch -mx-4">
+                <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="bg-white p-8 rounded-lg shadow-lg h-full">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-eye fa-2x text-blue-500 mr-4"></i>
+                            <h3 class="font-teko text-3xl uppercase">Our Vision</h3>
+                        </div>
+                        <p class="text-gray-700">To be the region's most trusted and innovative partner for architectural aluminum and glass solutions, transforming spaces through exceptional design and lasting quality.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 px-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="bg-white p-8 rounded-lg shadow-lg h-full">
+                        <div class="flex items-center mb-4">
+                             <i class="fas fa-bullseye fa-2x text-blue-500 mr-4"></i>
+                            <h3 class="font-teko text-3xl uppercase">Our Mission</h3>
+                        </div>
+                        <p class="text-gray-700">To deliver superior metal and glass products through precision engineering, expert craftsmanship, and a relentless commitment to customer satisfaction, ensuring every project is completed to the highest standards of safety and excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section id="process" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-teko text-5xl uppercase wow fadeInDown">Our Process</h2>
+                <p class="text-lg text-gray-600 wow fadeInUp" data-wow-delay="0.2s">From Consultation to Completion</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="bg-gray-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 border-4 border-blue-500">
+                        <i class="fas fa-comments fa-3x text-blue-500"></i>
+                    </div>
+                    <h3 class="font-teko text-2xl uppercase">1. Consultation</h3>
+                    <p>We start by understanding your needs, scope, and vision for the project.</p>
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="bg-gray-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 border-4 border-blue-500">
+                        <i class="fas fa-drafting-compass fa-3x text-blue-500"></i>
+                    </div>
+                    <h3 class="font-teko text-2xl uppercase">2. Design & Plan</h3>
+                    <p>Our experts create detailed plans and mockups for your approval.</p>
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="bg-gray-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 border-4 border-blue-500">
+                        <i class="fas fa-cogs fa-3x text-blue-500"></i>
+                    </div>
+                    <h3 class="font-teko text-2xl uppercase">3. Fabrication</h3>
+                    <p>We craft your components with precision in our state-of-the-art facility.</p>
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="bg-gray-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 border-4 border-blue-500">
+                        <i class="fas fa-hard-hat fa-3x text-blue-500"></i>
+                    </div>
+                    <h3 class="font-teko text-2xl uppercase">4. Installation</h3>
+                    <p>Our skilled team ensures a flawless and timely installation on-site.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+     <!-- Footer -->
+     <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <h3 class="font-teko text-3xl uppercase mb-4">Contact Us</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 474 Pike Rd Unit A, Huntingdon Vy, Pa 19006-1610, US</p>
+                    <p><i class="fas fa-envelope mr-2"></i> admin@keystonealumglass.com</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                     <div class="h-64 rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.812429497176!2d-75.0505!3d40.125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b3e3e4a4b8c3%3A0x8e1f1a1b1b0b1b0b!2s474%20Pike%20Rd%20Unit%20A%2C%20Huntingdon%20Valley%2C%20PA%2019006%2C%20USA!5e0!3m2!1sen!2sng!4v1622063000000!5m2!1sen!2sng" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Initialize Wow.js -->
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+</html>
